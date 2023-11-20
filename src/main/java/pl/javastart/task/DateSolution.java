@@ -51,7 +51,6 @@ public class DateSolution {
         return localDateTime.atZone(ZoneId.systemDefault());
     }
 
-
     public static ZonedDateTime returnDateWithoutTime(String date) {
         for (String s : FORMATTER_WITHOUT_TIME) {
             DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern(s);
